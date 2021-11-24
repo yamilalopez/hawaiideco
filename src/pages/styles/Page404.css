@@ -1,0 +1,11 @@
+.nofound-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: azure;
+  }
+  
+  .nofound-container h1 {
+    text-align: center;
+  }
