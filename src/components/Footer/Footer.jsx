@@ -7,43 +7,28 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-6">
-            <h6>About</h6>
+            <h6>Hawaii Deco</h6>
             <p className="text-justify">
               {" "}
-              Somos una empresa jóven y dinámica, comprometidos con la calidad
-              en la atención y la satisfacción de nuestros
-              clientes.Representamos a importantes marcas, sobre las cuales
-              además ofrecemos servicio de postventa con Taller y Repuestos
-              Originales. Estamos a diposición para atender tus consultas y
-              ayudarte en tu decisión de adquirir o renovar tu moto o ATV.
+              Somos un emprendimiento familiar destinado a llevar calidez y amor a los hogares.
+              Todos nuestros productos están confeccionados con materiales de primera calidad;
+              ayudándonos a decorar cada rincón de tus espacios de la mejor manera.
+
             </p>
           </div>
+
           <div className="col-xs-6 col-md-3">
-            <h6>Tools</h6>
+            
             <ul className="footer-links mt-4">
-              <li>React Js</li>
+              <li>Inicio</li>
               <br></br>
-              <li>JavaScript</li>
+              <li>Sobre nosotros</li>
               <br></br>
-              <li>Bootstrap</li>
+              <li>Productos</li>
               <br></br>
-              <li>HTML 5</li>
+              <li>Legal</li>
               <br></br>
-              <li>CSS</li>
-            </ul>
-          </div>
-          <div className="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
-            <ul className="footer-links mt-4">
-              <li>Home</li>
-              <br></br>
-              <li>About Us</li>
-              <br></br>
-              <li>Products</li>
-              <br></br>
-              <li>Privacy Policy</li>
-              <br></br>
-              <li>Contact Us</li>
+              <li>Contacto</li>
             </ul>
           </div>
         </div>
@@ -52,7 +37,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
             <p className="copyright-text">
-              Copyright &copy; 2021 All Rights Reserved by Leandro Benac.
+              Copyright &copy; 2021 All Rights Reserved by HawaiiDeco.
             </p>
           </div>
         </div>

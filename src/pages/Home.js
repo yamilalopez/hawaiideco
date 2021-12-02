@@ -1,12 +1,12 @@
 import React from "react";
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
 
-const Products = () => {
+const Home = () => {
   return (
-    <main>
+    <div>
       <ItemListContainer />
-    </main>
+    </div>
   );
 };
 
-export default Products;
+export default Home;

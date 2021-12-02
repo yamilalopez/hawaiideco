@@ -10,10 +10,10 @@ const ItemList = () => {
   useEffect(() => {
     const db = getFirestore();
     db.collection("Items")
-      .get() 
+      .get() //toda la coleccion
       .then((resp) =>
         setProducts(resp.docs.map((it) => ({ id: it.id, ...it.data() })))
-      ); 
+      ); //capturar la promesa
   }, []);
 
   let { categorias } = useParams();
@@ -46,6 +46,7 @@ const ItemList = () => {
 
   useEffect(() => {
     showItems();
+    // eslint-disable-next-line
   }, [categorias]);
 
   return (

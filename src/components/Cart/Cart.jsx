@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useCartContext } from "../../Context/CartContext";
 import { Link } from "react-router-dom";
-//import "../Cart/Cart.css";
+import "../Cart/Cart.css";
 import firebase from "firebase";
 import Swal from "sweetalert2";
 import { getFirestore } from "../../services/getFirebase";

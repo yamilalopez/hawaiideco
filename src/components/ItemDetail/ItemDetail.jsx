@@ -1,3 +1,4 @@
+//componente presentaciontal
 import React, { useState } from "react";
 import { useCartContext } from "../../Context/CartContext";
 import ItemCount from "../ItemCount/ItemCount";
@@ -12,7 +13,7 @@ const ItemDetail = ({ item }) => {
     if (cartList.length === 0) {
       addItem({ item: item, cantidad: qty });
       addCart(qty);
-      alert(`Agregaste al carrito ${qty} moto/s ${item.nombre}`);
+      alert(`Agregaste al carrito ${qty} ${item.nombre}`);
       setShow(true);
       setHide(false);
     } else {
@@ -47,26 +48,23 @@ const ItemDetail = ({ item }) => {
         <div className="card mt-5 mb-5 col-sm-6 col-md-4">
           <img src={item.img} className="card-img-top" alt="..." />
           <h2>{item.nombre}</h2>
-          <ul className="info-grid">
-            <li>
-              Modelo<br></br> {item.category}
-            </li>
-            <li>Precio Usd{item.precio}</li>
-          </ul>
           <p className="descripcion">{item.descripcion}</p>
+          <p className="precio">Precio: ${item.precio}</p>
+          
+          
           {hide ? (
             <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
           ) : null}
           {show ? (
             <Link to={"/cart"}>
-              <button className="btn btn-dark botonAgregar btn__detail mb-1">
+              <button className="btn botonAgregar btn__detail mb-1">
                 Finalizar Compra
               </button>
             </Link>
           ) : null}
           {show ? (
             <Link to={"/"}>
-              <button className="btn btn-dark botonAgregar btn__detail mb-5">
+              <button className="btn botonAgregar btn__detail mb-5">
                 Seguir Comprando
               </button>
             </Link>

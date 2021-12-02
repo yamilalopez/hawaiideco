@@ -18,7 +18,7 @@ const CartContextProvider = ({ children }) => {
     setqBuy(qBuy + qty);
   };
 
-  // para limpiar carrito
+  
   const clearCart = () => {
     setCartList([]);
     setqBuy(0);

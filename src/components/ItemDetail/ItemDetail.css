@@ -1,0 +1,42 @@
+.img-detail {
+  width: 100%;
+}
+
+.detail-info {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 40px;
+  max-width: 400px;
+}
+
+.descripcion {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.precio {
+  font-weight: bolder;
+}
+
+.btn:hover {
+  color: #66806A;
+}
+
+.btn__detail {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .card {
+    margin-left: 4px;
+  }
+}

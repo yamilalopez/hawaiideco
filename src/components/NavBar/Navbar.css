@@ -1,0 +1,17 @@
+.cuotas {
+  text-align: center;
+  padding-top: 10px;
+}
+
+nav {
+  background-color: #CFB784;
+  height: 80px;
+}
+
+.imgNav {
+  height: 80px;
+}
+
+.navText {
+  font-size: 18px;
+}

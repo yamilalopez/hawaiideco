@@ -2,7 +2,6 @@ import firebase from "firebase/app"
 
 import 'firebase/firestore'
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBZYeJRA7Lja9forvggq2y7bQUq89R2jCE",
     authDomain: "hawaiideco.firebaseapp.com",
@@ -23,3 +22,5 @@ export function getFirestore(){
     return firebase.firestore(app)
 
 }
+
+
