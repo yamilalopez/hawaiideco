@@ -1,9 +1,10 @@
 import React from "react";
 import { Button, Table } from "react-bootstrap";
+import "../Cart/CartTable.css"
 
 const CartTable = ({ cartList, clearItem, totalPxQ, pxq }) => {
   return (
-    <Table striped bordered hover variant="dark" className="col-md-4 col-lg-12">
+    <Table striped bordered hover className="col-md-4 col-lg-12">
       <thead>
         <tr>
           <th>Cantidad</th>

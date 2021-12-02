@@ -87,12 +87,11 @@ const Cart = () => {
   return (
     <section>
       <div>
-        <h1 className="cart__title">Productos Adquiridos</h1>
         {cartMessage ? (
           <div className="btnCart btnCart__title">
-            <h2>Aun no has agregado ningun producto</h2>
+            <h2>Aún no has agregado ningun producto</h2>
             <Link to="/">
-              <button className="btn btn-dark botonAgregar m-1 ">
+              <button className="btn botonAgregar m-1 ">
                 Elegir producto
               </button>
             </Link>
