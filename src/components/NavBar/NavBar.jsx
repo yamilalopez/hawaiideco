@@ -1,5 +1,4 @@
 import React from 'react'
-import * as bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Navbar/Navbar.css';
 import CartWidget from '../CartWidget/CartWidget';
