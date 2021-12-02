@@ -9,7 +9,7 @@ const CartTable = ({ cartList, clearItem, totalPxQ, pxq }) => {
           <th>Cantidad</th>
           <th>Producto</th>
           <th>Precio</th>
-          <th>TotalxU</th>
+          <th>Total unitario</th>
           <th></th>
         </tr>
       </thead>
@@ -18,8 +18,8 @@ const CartTable = ({ cartList, clearItem, totalPxQ, pxq }) => {
           <tr key={item.item.id}>
             <td>{item.cantidad}</td>
             <td>{`${item.item.category} ${item.item.nombre}`}</td>
-            <td>{item.item.precio}</td>
-            <td>{pxq(item.cantidad, item.item.precio)}</td>
+            <td>${item.item.precio}</td>
+            <td>${pxq(item.cantidad, item.item.precio)}</td>
             <td className="text-center">
               <Button variant="danger" onClick={() => clearItem(item.item.id)}>
                 {" "}
@@ -29,8 +29,8 @@ const CartTable = ({ cartList, clearItem, totalPxQ, pxq }) => {
           </tr>
         ))}
         <tr>
-          <td colSpan="3">TOTAL USD</td>
-          <td colSpan="2">USD {totalPxQ()}</td>
+          <td colSpan="3">TOTAL</td>
+          <td colSpan="2">${totalPxQ()}</td>
         </tr>
       </tbody>
     </Table>
